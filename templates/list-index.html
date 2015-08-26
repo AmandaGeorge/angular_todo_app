@@ -1,0 +1,7 @@
+<div ng-controller="ListIndexCtrl">
+	<h2>Todos Lists</h2>
+	<li ng-repeat="list in lists">
+		<h5 >{{list.title}}
+		<p>Created at: {{list.created_at | date:'fullDate'}}</p>
+	</li>
+</div>

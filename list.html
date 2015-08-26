@@ -1,0 +1,7 @@
+<li ng-repeat="todo in todos">
+	<h5 ng-class="{strike: complete}">{{todo.title}}
+	<input type="button" value="Complete" ng-model="complete" class="btn btn-success btn-xs">
+	<button ng-click="delete(todo)" class="btn btn-danger btn-xs">Delete</button>
+	</h5>
+	<p>Created at: {{todo.created_at | date:'fullDate'}}</p>
+</li>
